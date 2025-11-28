@@ -1,1 +1,4 @@
-console.log ("Alert!")
+function foo(){
+    console.log ("Red Alert!")
+}
+
