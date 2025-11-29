@@ -58,9 +58,13 @@
     ---------------
     CREATE a new branch
         git branch nameOfTheNewBranch
+    OR
+        git checkout -c nameOfTheBranch
     ---------------
     SWITCH to another branch
         git switch nameOfTheBranch
+    OR
+        git checkout nameOfTheBranch
     ---------------
     CREATE and switch to another branch
         git switch -c nameOfTheBranch
@@ -79,6 +83,9 @@
     ---------------
     RENAME a branch (!Being on the branch!)
         git branch -m nameOfTheBranch
+    ---------------
+    DISPLAY THE LINE-BY-LINE DIFFERENCES that have been made in each modified files : "-" Delete, "+" Add, " " No changes
+        git diff
     ---------------
     DISPLAY THE LINE-BY-LINE DIFFERENCES that have been made in each modified files : "-" Delete, "+" Add, " " No changes
         git diff
