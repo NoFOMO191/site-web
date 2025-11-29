@@ -58,16 +58,16 @@
     ---------------
     CREATE a new branch
         git branch nameOfTheNewBranch
-    OR
-        git checkout -c nameOfTheBranch
     ---------------
     SWITCH to another branch
         git switch nameOfTheBranch
     OR
         git checkout nameOfTheBranch
-    ---------------
+        ---------------
     CREATE and switch to another branch
         git switch -c nameOfTheBranch
+    OR (But to avoid)
+        git checkout -b nameOfTheBranch
     ---------------
     MERGE a branch at another
         git merge nameOfTheBranch
@@ -87,7 +87,25 @@
     DISPLAY THE LINE-BY-LINE DIFFERENCES that have been made in each modified files : "-" Delete, "+" Add, " " No changes
         git diff
     ---------------
-    DISPLAY THE LINE-BY-LINE DIFFERENCES that have been made in each modified files : "-" Delete, "+" Add, " " No changes
-        git diff
+    SWITCH to another commit
+        git checkout idOfTheCommit
+    (ex:git checkout ce4b5d5bb8d927392beae48c450d89128faa9e80)
+    OR
+        git checkout nameOfTheTag
+    (ex:git checkout Version 1)
     ---------------
+    RETURN TO THE TOP of the list of commits
+        git switch nameOfTheCurrentBranch
+    OR
+        git checkout nameOfTheCurrentBranch
+        ---------------
+    TAG a commits (!First switch to the commit I want to tag!)
+        git tag nameOfTheTag
+        ---------------
+    DISPLAY the list of tags
+        git tag
+        ---------------
+    DELETE a tag
+        git tag -d nameOfTheTag
+        ---------------
 -->
