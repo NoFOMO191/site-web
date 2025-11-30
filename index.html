@@ -15,6 +15,7 @@
     <input type="">
 
     <h3>Lorem ipsum dolor sit amet.</h3>
+    <video src=""></video>
 
     <script src="script.js"></script>
 </body>
@@ -52,6 +53,8 @@
     ---------------
     LOG my commits :
         git log
+    OR LOG my commits on one line :
+        git log --oneline
     ---------------
     DISPLAY the status of my commits in my workflow :
         git status
@@ -94,7 +97,7 @@
         git diff
     ---------------
     SWITCH to another commit
-        git checkout idOfTheCommit
+        git checkout commitId
     (ex:git checkout ce4b5d5bb8d927392beae48c450d89128faa9e80)
     OR
         git checkout nameOfTheTag
@@ -129,6 +132,18 @@
     DELETE a file in the transit zone
         git restore --staged nameOfTheFile
     (ex:git restore --staged index.html)
+        ---------------
+    DELETE a commit to an older commit
+        git reset commitId
+    (ex:git reset de99f3c)
+        ---------------
+    DELETE a commit to an older commit while deleting the changes
+        git reset --hard commitId
+    (ex:git reset --hard de99f3c)
+        ---------------
+    JUMP a or multipe commit(s) and to land to the new commit that contain an older commit
+        git revert commitIdToRetrieve
+    (ex:git revert 01aba52)
         ---------------
     ===================
     COMMANDS GITIGNORE
