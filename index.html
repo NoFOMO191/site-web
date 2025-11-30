@@ -14,6 +14,15 @@
     <label for=""></label>
     <input type="">
 
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
     <script src="script.js"></script>
 </body>
 </html>
@@ -112,6 +121,22 @@
     DELETE a tag
         git tag -d nameOfTheTag
         ---------------
+    RESTORE a file to its last commit where I were
+        git restore nameOfTheFile
+    (ex:git restore index.html)
+    OR
+        git checkout HEAD nameOfTheFile
+    (ex:git checkout HEAD index.html)
+
+        ---------------
+    DISPLAY a file in an old commit just to see its code
+        git restore --source HEAD~3 nameOfTheFile
+    (ex:git restore --source HEAD~3 index.html)
+        ---------------
+    DELETE a file in the transit zone
+        git restore --staged nameOfTheFile
+    (ex:git restore --staged index.html)
+        ---------------
     ===================
     COMMANDS GITIGNORE
     ===================
@@ -129,6 +154,6 @@
         /nameOfTheFolder
     (ex:/node_modules)
         ---------------
-
+    
     
 -->
