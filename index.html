@@ -141,9 +141,14 @@
         git reset --hard commitId
     (ex:git reset --hard de99f3c)
         ---------------
-    JUMP a or multipe commit(s) and to land to the new commit that contain an older commit
+    JUMP one or more commit(s) and to land to the new commit that contain an older commit
         git revert commitIdToRetrieve
     (ex:git revert 01aba52)
+        ---------------
+    INTEGRATE one or more commit(s) that interest us but not an entire branch
+    (FIRST PLACE yourself on the branch that wants this or these commit(s), as for the merge)
+        git cherry-pick commitIdToMerge
+    (ex:git cherry-pick 9762e4b)
         ---------------
     ===================
     COMMANDS GITIGNORE
